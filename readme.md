@@ -1,6 +1,6 @@
 # amd_uprof-sys
 
-Provides FFI bindings to AMD uProf's `AMDProfileControl` API for profiling from Rust.
+Provides FFI bindings to AMD uProf's `AMDProfileController` API for profiling from Rust.
 
 **Env vars**:
 - `AMD_UPROF_DIR`: root install directory; used to infer include/lib paths.

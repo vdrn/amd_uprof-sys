@@ -57,12 +57,12 @@ fn find_lib_dir(target_os: &str, include_dir: Option<&Path>) -> Option<PathBuf> 
     }
 
     // If we found an include dir, try siblings (in case of no override)
-    if let Some(inc) = include_dir {
-        if let Some(root) = inc.parent() {
-            for candidate in collect_candidates_from_root(root, LIB_SUBDIRS) {
-                if lib_exists_in_dir(target_os, &candidate) {
-                    return Some(candidate);
-                }
+    if let Some(inc) = include_dir
+        && let Some(root) = inc.parent()
+    {
+        for candidate in collect_candidates_from_root(root, LIB_SUBDIRS) {
+            if lib_exists_in_dir(target_os, &candidate) {
+                return Some(candidate);
             }
         }
     }

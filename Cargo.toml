@@ -2,6 +2,12 @@
 name = "amd_uprof-sys"
 version = "0.1.0"
 edition = "2024"
+license = "Unlicense"
+description = "Raw FFI bindings for AMD UProf"
+homepage = "https://github.com/vdrn/amd_uprof-sys"
+repository = "https://github.com/vdrn/amd_uprof-sys"
+readme = "readme.md"
+keywords = ["amd", "uprof", "ffi", "bindings"]
 
 [features]
 default = []
