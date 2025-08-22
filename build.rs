@@ -3,6 +3,9 @@ use std::fs;
 use std::path::{Path, PathBuf};
 
 fn main() {
+    if env::var("DOCS_RS").is_ok() {
+        return;
+    }
     println!("cargo:rerun-if-changed=build.rs");
     println!("cargo:rerun-if-changed=wrapper.h");
     println!("cargo:rerun-if-env-changed=AMD_UPROF_DIR");

@@ -1,7 +1,9 @@
 [package]
 name = "amd_uprof-sys"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
+
+authors = ["vdrn <valinion@gmail.com>"]
 license = "Unlicense"
 description = "Raw FFI bindings for AMD UProf"
 homepage = "https://github.com/vdrn/amd_uprof-sys"
