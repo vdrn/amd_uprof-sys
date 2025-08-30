@@ -10,6 +10,8 @@ homepage = "https://github.com/vdrn/amd_uprof-sys"
 repository = "https://github.com/vdrn/amd_uprof-sys"
 readme = "readme.md"
 keywords = ["amd", "uprof", "ffi", "bindings"]
+categories = ["development-tools::profiling", "external-ffi-bindings"]
+links = "amd_uprof"
 
 [features]
 default = []
